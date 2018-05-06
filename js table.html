@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+        border: 1px solid black;
+
+    width: 100%;
+}
+
+th, td {    border: 1px solid black;
+
+    text-align: center;
+    padding: 4px;
+}
+
+
+
+</style>
+<body onload="printTable()">
+
+<h2>My First JavaScript</h2>
+
+<table>
+<tr>
+<td id="idCol"></td>
+<td id="nameCol"></td>
+<td id="phoneCol"></td>
+</tr>
+<tr>
+<td id="idCol2"></td>
+<td id="nameCol2"></td>
+<td id="phoneCol2"></td>
+</tr>
+<tr>
+<td id="idCol3"></td>
+<td id="nameCol3"></td>
+<td id="phoneCol3"></td>
+</tr>
+</table>
+
+
+
+<script>
+function printTable(){
+var id = 1;
+var name = 'Salsabeel';
+var phone = "01023456788";
+var id1=2;
+var name1="menna";
+var phone1="01122343244";
+var id3=3;
+var name3="ibtehal";
+var phone3="01234452322";
+document.getElementById('idCol').innerHTML = id;
+
+document.getElementById('nameCol').innerHTML = name;
+
+document.getElementById('phoneCol').innerHTML = phone;
+
+
+
+document.getElementById('idCol2').innerHTML = id1;
+
+document.getElementById('nameCol2').innerHTML = name1;
+
+document.getElementById('phoneCol2').innerHTML = phone1;
+
+
+
+document.getElementById('idCol3').innerHTML = id3;
+
+document.getElementById('nameCol3').innerHTML = name3;
+
+document.getElementById('phoneCol3').innerHTML = phone3;
+
+
+}
+
+</script>
+</body>
+</html>
